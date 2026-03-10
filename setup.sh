@@ -2,7 +2,7 @@
 
 set -e
 
-CONFIG_DIRS='alacritty fish helix i3'
+CONFIG_DIRS='alacritty fish helix i3 polybar'
 
 pp() {
   echo "$@"
