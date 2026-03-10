@@ -1,0 +1,47 @@
+[[language]]
+name = "c"
+indent = { tab-width = 4, unit = "    "}
+
+[[language]]
+name = "cpp"
+indent = { tab-width = 4, unit = "    "}
+
+[[language]]
+name = "rust"
+auto-format = false
+
+[[language]]
+name = "go"
+auto-format = false
+
+[[language]]
+name = "html"
+formatter = { command = 'prettier', args = ["--parser", "html"] }
+
+[language-server.clangd]
+args = ['--function-arg-placeholders=0', '--header-insertion=never']
+
+[language-server.rust-analyzer.config]
+completion.callable.snippets = "none"
+
+[language-server.haskell-language-server]
+command = "haskell-language-server-wrapper"
+
+[language-server.haskell-language-server.config]
+haskell = { plugin = { rename = { config = { crossModule = true, autoExports = true } } } }
+
+[language-server.omnisharp]
+command = "csharp-ls"
+args = ['-s', 'regex-cs.sln']
+
+[language-server.pyright]
+command = "pyright-langserver"
+args = ["--stdio"]
+config = {} # buggy behaviour, you need a pyproject.toml and pyrightconfig.json
+
+[[language]]
+name = "python"
+formatter = { command = "autopep8", args = ["-"] }
+auto-format = true
+roots = ["pyproject.toml"]
+language-servers = [ "pyright" ] 

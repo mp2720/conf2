@@ -1,0 +1,50 @@
+theme = "dark_plus"
+
+[editor]
+line-number = "relative"
+bufferline = "always"
+
+[editor.auto-save]
+focus-lost = true
+after-delay.enable = true
+after-delay.timeout = 500
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.statusline]
+left = [
+  "mode",
+  "spinner",
+  "version-control",
+  "file-name",
+  "read-only-indicator",
+  "file-modification-indicator"
+]
+center = []
+right = [
+  "diagnostics",
+  "selections",
+  "primary-selection-length",
+  "register",
+  "position",
+  "file-encoding",
+  "file-line-ending",
+  "total-line-numbers",
+  "position-percentage"
+]
+
+[keys.normal]
+C-y = '@"+y'
+C-v = '@"+p'
+A-f = ":format"
+C-R = [":reload-all", ":lsp-restart"]
+C-n = ["move_char_right", "move_prev_word_start", "move_next_word_start", "search_selection"]
+
+[keys.insert]
+A-f = ":format"
+C-R = [":reload-all", ":lsp-restart"]
+
+[keys.select]
+C-y = '@"+y'
+C-v = '@"+p'
