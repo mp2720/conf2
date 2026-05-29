@@ -1,0 +1,6 @@
+nnoremap gn :tabn<CR>
+nnoremap gp :tabp<CR>
+nnoremap gc :tabc<CR>
+map <C-v> "+p
+map <C-y> "+y
+set rnu

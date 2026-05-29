@@ -18,3 +18,4 @@ done
 
 pp ln -sf "$(realpath .ideavimrc)" "$HOME/.ideavimrc"
 pp ln -sf "$(realpath .vimrc)" "$HOME/.vimrc"
+pp ln -sf "$(realpath .vimrc-vscode)" "$HOME/.vimrc-vscode"
