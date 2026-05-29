@@ -1,0 +1,11 @@
+nnoremap gn :tabn<CR>
+nnoremap gp :tabp<CR>
+nnoremap gc :tabc<CR>
+map <Space>k <Action>(ShowHoverInfo)
+map ]d <Action>(GotoNextError)
+map [d <Action>(GotoPreviousError)
+map <C-v> "+p
+map <C-y> "+y
+set rnu
+map <C-o> :action Back<CR>
+map <C-i> :action Forward<CR>

@@ -1,5 +1,24 @@
+# import = [
+#     "/home/salomahin/.config/alacritty/themes/themes/alabaster.toml"
+# ]
+
 [window]
 dynamic_title=true
 
 [font]
-size=6
+size=6.5
+
+[font.normal]
+family="0xProto Nerd Font"
+# family = "Unifont"
+
+[[keyboard.bindings]]
+key = "m"
+mods = "Control"
+command = {program="alacritty", args=["msg", "config", "font.size=10"]}
+
+[[keyboard.bindings]]
+key = "m"
+mods = "Control|Shift"
+command = {program="alacritty", args=["msg", "config", "font.size=6.5"]}
+

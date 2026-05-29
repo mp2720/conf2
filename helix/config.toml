@@ -1,4 +1,5 @@
 theme = "dark_plus"
+# theme = "acme"
 
 [editor]
 line-number = "relative"

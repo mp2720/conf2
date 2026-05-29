@@ -45,3 +45,7 @@ formatter = { command = "autopep8", args = ["-"] }
 auto-format = true
 roots = ["pyproject.toml"]
 language-servers = [ "pyright" ] 
+
+[[language]]
+name = "json"
+soft-wrap.enable = true

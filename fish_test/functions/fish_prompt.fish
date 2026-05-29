@@ -53,15 +53,12 @@ function fish_prompt --description 'Write out the prompt'
     if test -n "$fish_vcs_out"
         printf '%s ' "$fish_vcs_out"
     end
-    # set arc_prompt_out (arc-prompt)
-    # if test -n "$arc_prompt_out"
-    #     printf ' %s ' "$arc_prompt_out"
-    # end
 
+    # Background jobs indicator
     set -l job_count (jobs | count)
     if test $job_count -gt 0
         set_color --bold yellow
-        echo -n " {$job_count} "
+        echo -n "[$job_count] "
         set_color normal
     end
 
