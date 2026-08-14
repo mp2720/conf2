@@ -2,7 +2,7 @@
 
 set -e
 
-CONFIG_DIRS='alacritty fish helix i3 polybar'
+CONFIG_DIRS='alacritty fish helix i3 polybar myscripts'
 
 pp() {
   echo "$@"
@@ -15,3 +15,7 @@ for cfg_dir in $CONFIG_DIRS; do
     pp ln -sf "$(realpath "$cfg_file")" "$HOME/.config/$cfg_file"
   done
 done
+
+pp ln -sf "$(realpath .ideavimrc)" "$HOME/.ideavimrc"
+pp ln -sf "$(realpath .vimrc)" "$HOME/.vimrc"
+pp ln -sf "$(realpath .vimrc-vscode)" "$HOME/.vimrc-vscode"
