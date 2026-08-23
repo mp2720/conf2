@@ -16,6 +16,8 @@ source ~/.venv/bin/activate.fish
 
 set -gx DOTNET_CLI_TELEMETRY_OPTOUT 1
 
+set -gx QT_QPA_PLATFORMTHEME qt5ct
+
 # Start X at login
 if status is-login
     if test -z "$DISPLAY" -a "$XDG_VTNR" = 1
