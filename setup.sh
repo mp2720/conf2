@@ -2,7 +2,7 @@
 
 set -e
 
-CONFIG_DIRS='alacritty fish helix i3 polybar myscripts xdg-desktop-portal'
+CONFIG_DIRS='alacritty fish helix i3 polybar myscripts xdg-desktop-portal fontconfig'
 
 pp() {
   echo "$@"
